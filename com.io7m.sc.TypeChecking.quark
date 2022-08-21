@@ -1,0 +1,6 @@
+(
+  summary:   "Type checking assertions.",
+  version:   "1.0.0",
+  license:   "ISC",
+  copyright: "Mark Raynsford 2022"
+)

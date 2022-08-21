@@ -1,0 +1,49 @@
+TITLE:: IO7MTypeError
+summary:: An exception indicating a type error.
+categories:: Type Checking
+related:: Classes/IO7MTypeChecking
+
+DESCRIPTION::
+An exception indicating a type error.
+
+
+CLASSMETHODS::
+
+METHOD:: new
+Create a new exception.
+
+ARGUMENT:: receiver
+The exception receiver.
+
+ARGUMENT:: expected
+The expected expression type.
+
+ARGUMENT:: received
+The received expression type.
+
+returns:: this
+
+
+INSTANCEMETHODS::
+
+METHOD:: received
+The exception receiver.
+
+returns:: received
+
+METHOD:: expected
+The expected expression type.
+
+returns:: expected
+
+METHOD:: errorString
+The exception error string.
+
+returns:: An error string
+
+
+EXAMPLES::
+
+code::
+IO7MTypeError.new (IO7MTypeChecking, class, expression).throw;
+::

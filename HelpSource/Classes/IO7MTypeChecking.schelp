@@ -1,0 +1,45 @@
+TITLE:: IO7MTypeChecking
+summary:: Type checking functions.
+categories:: Type Checking
+
+DESCRIPTION::
+The IO7MTypeChecking class provides functions for asserting the types of
+variables in order to catch mistakes early.
+
+CLASSMETHODS::
+
+METHOD:: checkExact
+Check that the given expression is of the exact given class.
+
+ARGUMENT:: class
+The expected type.
+
+ARGUMENT:: expression
+The expression.
+
+returns:: expression
+
+METHOD:: check
+Check that the given expression is of the given class, according to isKindOf.
+
+ARGUMENT:: class
+The expected type.
+
+ARGUMENT:: expression
+The expression.
+
+returns:: expression
+
+
+INSTANCEMETHODS::
+
+
+EXAMPLES::
+
+code::
+// Succeeds.
+IO7MTypeChecking.check(Integer, 23);
+
+// Throws an exception.
+IO7MTypeChecking.check(Integer, "x");
+::
